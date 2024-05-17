@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display:grid;
+            border:2px solid black;
+            height:50vh;
+            width:50vh;
+            grid-template-rows:repeat(10,1fr);
+            grid-template-columns:repeat(10,1fr);
+
+        }
+
+        div:first-of-type
+        {
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end:11;
+            background-color:gray;}
+            
+        div:nth-of-type(2)  {
+            grid-row-start:2;
+            grid-row-end:5;
+            grid-column-start:1;
+            grid-column-end:11;
+            background-color:skyblue;
+        }  
+        div:nth-of-type(3) {
+        
+            grid-row-start:5;  
+            grid-row-end:11;
+            grid-column-start:3;
+            grid-column-end:1;
+            background-color:red;
+        }
+        div:nth-of-type(4) {
+        
+            grid-row-start:5;  
+            grid-row-end:8;
+            grid-column-start:3;
+            grid-column-end:11;
+            background-color:navy;
+        }
+        div:nth-of-type(5) {
+
+             grid-row-start:8;  
+            grid-row-end:10;
+            grid-column-start:3;
+            grid-column-end:11;
+            background-color:yellow;}
+
+            div:nth-of-type(6) {
+
+            grid-row-start:;  
+            grid-row-end:;
+            grid-column-start:3;
+            grid-column-end:8;
+            background-color:lightgreen;}
+
+        }
+        div:last-of-type(7) {
+        
+            grid-row-start:;  
+            grid-row-end:;
+            grid-column-start:7;
+            grid-column-end:11;
+            background-color:rgba(179, 13, 110, 0.433);}
+
+  </style>
+<body>
+
+    <section>
+
+        <div>header</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        
+
+       </section>
+
+</body>
+
+</html>
